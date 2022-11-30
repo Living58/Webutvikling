@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="utf-8">
+		<meta property="fb:app_id" content="559593091782028"/>
+		<meta property="og:title" content="Samleside for webutviklingsfaget"/>
+		<meta property="og:url" content="https://itstud.hiof.no/~livia/webutvikling/index.html"/>
+		<meta property="og:type" content="article"/>
+		<meta property="og:locale" content="nb_NO"/>
+		<meta property="og:image" content="https://itstud.hiof.no/~livia/webutvikling/res/cms.png"/>
+		<meta property="og:image:alt" content="Et bilde som illustrerer CMS"/>
+		<meta property="og:description" content="En samleside for webutviklingsfaget på høyskole med CMS, SEO og UU, samt analyse av eget nettsted"/>
+
+		<meta name="twitter:cards" content="summary"/>
+		<meta name="twitter:title" content="Samleside for webutviklingsfaget"/>
+		<meta name="twitter:description" content="En samleside for webutviklingsfaget på høyskole med CMS, SEO og UU, samt analyse av eget nettsted"/>
+		<meta name="twitter:site" content="@livmor4747"/>
+		<meta name="twitter:image" content="https://itstud.hiof.no/~livia/webutvikling/res/cms.png"/>
+		<meta name="twitter:image:alt" content="Et bilde som illustrerer CMS"/>
+
+		<meta name="keywords" content="SEO, CMS, UU, universell utforming, analyse">
+		<meta name="description" content="En samleside for webutviklingsfaget på høyskole med CMS, SEO og UU, samt analyse av eget nettsted">
+
+		<meta name="viewport" content="width=devise-width, initial-scale=1.0">
+		<title>Webutvikling</title>
+		<link rel="icon" type="image/x-icon" href="res/logo2.png">
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		<link href="icons/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/gridstyle.css">
+		
+		<script src="js/myscript.js"></script>
+
+	</head>
+	<body>
+	<div id="grid-container">
+		<header id="page-header">
+			<h1>Webutvikling</h1>
+		</header>
+		<nav>
+			<a href="index.html"><img id="logo-nav" src="res/logo2.png" alt="Et bilde av en logo for nettsiden."></a>
+			<i class="fa-solid fa-bars-staggered" onclick="mobilMenu()"> </i>
+			<ul id="ham" class="top-menu">
+				<li><a href="index.html">Hjem</a></li>
+				<li><a href="kontakt.html">Kontakt oss</a></li>
+				<li><a href="analyse.html">Analyse</a></li>
+				<li><a href="CMS.html">CMS</a></li>
+				<li><a href="uuseo.html">UU vs SEO</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section id="intro">
+				<article>
+					<header>
+						<h2>Introduksjon</h2>
+					</header>
+					<p>Denne nettsiden er en introduksjon til webutvikling med nyttige artikler for dypere forståelse. Nettsiden er selv laget av en student som del av eksamensvurdering. Har du spørsmål eller tilbakemeldinger kan du benytte deg av knappen under.</p>
+					<a id="contact-link" href="kontakt.html">Kontakt oss</a>
+				</article>
+			</section>
+			<section id="articles">
+				<article>
+					<header>
+						<h2>Analyse</h2>
+					</header>
+					<img class="css-image" src="res/dark.jpg" alt="Et bilde av et mørke før storm for illustrasjon. Photo by Henrieke Fischer on Unsplash.">
+					<p>
+						For å analysere nettstedet så har jeg brukt både Lighthouse for å analysere hvor bra SEO nettstedet har, i tillegg til at jeg har brukt Wave som er produsert av Webaim for å analysere hvor god nettstedet er for universell utforming. Den heuristiske evalueringen har jeg gjort selv ved å ta i bruk de 10 heuristiske reglene for brukervennlighet av Jakob Nielsen.
+					</p>
+					<p>
+						I tillegg til resultater fra de forskjellige analysene så har jeg også lagt med en beskrivende tabell som oppsummerer resultatene og viser til hvilke tiltak som er gjort på nettstedet i ettertid.
+					</p>
+					<p>
+						Det er også lenket opp til en tilgjengelighetserklæring som viser til at nettstedet er godkjent etter det nye lovverket satt av UU-tilsynet. Lovverket blir gjeldende fra starten av 2023 og vil da være obligatorisk å implementere på nye nettsteder.
+					</p>
+					<a class="link" href="analyse.html">Les mer</a>
+				</article>
+				<div id="flex-display">
+					<article>
+						<header>
+							<h2>CMS</h2>
+						</header>
+						<img class="css-image" src="res/cms.png" alt="En illustrasjon av et mulig CMS ikon som er veldig hjemmelaget.">
+						<p>
+							CMS (content management system), på godt norsk, innholdsstyrings-system er kort fortalt et system som lar deg bygge opp ditt eget nettsted på en enklere måte. Det finnes to forskjellige hovedgrupper i CMS, og det er et headless CMS og et seamless CMS.
+						</p>
+						<a class="link" href="CMS.html">Les mer</a>
+					</article>
+					<article>
+						<header>
+							<h2>UU vs SEO</h2>
+						</header>
+						<img class="css-image" src="res/uu.png" alt="En illustrasjon av universell utforming med diverse ikoner.">
+						<p>
+							Universell utforming går ut på at alle skal kunne bruke nettstedet ditt på en så lik som mulig måte. SEO er en forkortelse av "Search engine optimization", direkte oversatt søkemotor optimalisering. Eksempler på søkemotorer er Google, Yahoo og Bing. 
+						</p>
+						<a class="link" href="uuseo.html">Les mer</a>
+					</article>
+				</div>
+			</section>
+		</main>
+		<footer>
+			Liv Ingrid Andersen || livia@hiof.no
+		</footer>
+	</div>
+	</body>
+</html>

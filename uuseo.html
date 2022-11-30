@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=devise-width, initial-scale=1.0">
+		<title>Webutvikling</title>
+		<link rel="icon" type="image/x-icon" href="res/logo2.png">
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		<link href="icons/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/gridstyle.css">
+		
+		<script src="js/myscript.js"></script>
+
+	</head>
+	<body>
+	<div id="grid-container">
+		<header id="page-header">
+			<h1>Webutvikling</h1>
+		
+		</header>
+		<nav>
+			<a href="index.html"><img id="logo-nav" src="res/logo2.png" alt="Et bilde av en logo for nettsiden."></a>
+			<i class="fa-solid fa-bars-staggered" onclick="mobilMenu()"> </i>
+			<ul id="ham" class="top-menu">
+				<li><a href="index.html">Hjem</a></li>
+				<li><a href="kontakt.html">Kontakt oss</a></li>
+				<li><a href="analyse.html">Analyse</a></li>
+				<li><a href="CMS.html">CMS</a></li>
+				<li><a href="uuseo.html">UU vs SEO</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section>
+				<article>
+					<header>
+						<h2>UU vs SEO</h2>
+					</header>
+					<img class="css-image" src="res/uu.png" alt="En illustrasjon av universell utforming med diverse ikoner.">
+					<h3>SEO</h3>
+					<p>
+						SEO er en forkortelse av "Search engine optimization", direkte oversatt søkemotor optimalisering. Eksempler på søkemotorer er Google, Yahoo og Bing. Grunnen til at SEO er så viktig for et nettsted er for å få brukere til å finne nettstedet. Implementering av SEO til nettstedet ditt kan gjøre at hvis en bruker søker opp et ord på for eksempel Google så kommer din nettside opp som et alternativ. Det er viktig med korrekt SEO slik at brukeren som klikker seg inn på siden, faktisk finner det de leter etter, og forhåpentligvis bruker nettstedet ditt igjen eller anbefaler det videre.
+					</p>
+					<p>
+						Eksempler på implementering av SEO til ditt nettsted kan være <meta name="keywords" content=""> eller <meta name="description" content="">. Keywords er ord som kan bli søkt opp av brukere og dermed vil de få opp din nettside som et alternativ. Når brukere søker opp ting på søkemotorer bruker de ofte keywords, et eksempel på et søk kan være: "SEO HTML" for at brukeren skal få opp eksempler på koding av SEO i HTML. Keywords blir i dag oftere ignorert av søkemotorer fordi de har blitt misbrukt tidligere. Description og Title er i dag de viktigste punktene av implementerings-kode.
+					</p>
+					<h3>Universell utforming</h3>
+					<p>
+						Universell utforming går ut på at alle skal kunne bruke nettstedet ditt på en så lik som mulig måte. Grunnen til dette er for å motvirke diskriminering mot minoritetsgrupper og heller fokusere på inkludering.
+					</p>
+					<p>
+						Eksempler på universell utforming er skjermleser, kontrastfarger, teksting av filmer og tastaturnavigering.
+					</p>
+					<p>
+						Skjermleser er et nyttig verktøy for mennesker med synsvansker. Det første man må sikre seg for skjermlesing er at du har lagt inn språk i HTML-filen gjennom å bruke "lang"-tagen i tillegg til det riktige språket for artikkelen. Deretter er det viktig å markere overskrifter med "header" og å ha en god systematikk på resten av innholdet med semantiske tager som "nav", "aside" og "footer".
+					</p>
+					<p>
+						Det er viktig at nettsiden kan fungere som den skal med kun hjelp av tastatur. Dette kommer av at noen brukere har kanskje ikke mulighet eller lyst til å bruke en mus for å navigere seg rundt på nettsiden din. For å sjekke hvordan nettsiden fungerer ved kun bruk av tastatur så prøvde jeg meg ved å bruke "tab"-knappen og navigere meg rundt på nettsiden.
+					</p>
+					<p>
+						Kontrastfarger er en enkel ting å ordne på nettstedet ditt. Det holder med å sikre seg at teksten er i en mørk farge og bakgrunnsfargen er lys, eller omvendt. Disse fargene må være såpass forskjellige at teksten synes ordentlig. Så lenge du har kontrastfarger på plass så hjelper det både de fargeblinde og de svaksynte en god del med å kunne lese innholdet på nettsiden uten skjermleser.
+					</p>
+					<p>
+						Teksting av filmer er også et nødvendig verktøy. Hvis du har flere filmer eller kurs på nettstedet ditt så er du nå forpliktet til å ha de tekstet for å oppfylle kravet om universell utforming. Denne loven ble vedtatt i 2013, men fristen for oppfylling av krav på nettsteder som allerede fantes var starten av 2021.
+					</p>
+				</article>
+			</section>
+			<section id="section-table">
+				<div class="double-container">
+					<span id="empty">Denne er tom</span>
+					<p class="bold-table">Universell utforming</p>
+					<p class="bold-table">SEO</p>
+					<p class="bold-table">CSS</p>
+					<p>Hjelper til med å designe siden slik at det blir enklere for flere å få med seg innholdet. F.eks. med kontrastfarger.</p>
+					<p></p>
+					<p class="bold-table">Semantiske tager</p>
+					<p>Hjelper med diverse verktøy som f.eks. skjermleser og tastaturnavigering.</p>
+					<p>Strukturerer innholdet slik at søkemotorene oppfatter hva innholdet på nettstedet er.</p>
+					<p class="bold-table">microdata</p>
+					<p></p>
+					<p>Gir mer korrekte søk ved å definere typen på et ord, f.eks. en person blir definert som en person og ikke tekst.</p>
+					<p class="bold-table">Media queries</p>
+					<p>Gjør nettstedet responsiv, slik at det kan brukes på forskjellige formater.</p>
+					<p>Gjør nettstedet tilgjengelig på mobil, som kan være veldig attraktivt for brukeren.</p>
+					<p class="bold-table">Metadata</p>
+					<p></p>
+					<p>Hjelper søkemotorer med å plukke opp keywords som folk søker på og lenker dette opp mot ditt nettsted.</p>
+				</div>
+				<p>En tabell for å vise hva forskjellige deler av pensumet vi lærer i Webutvikling har å gjøre med enten universell utforming eller SEO.</p>
+			</section>
+			<section class="section-source">
+				<h2>Kilder:</h2>
+				<ul class="sources">
+					<li><a href="https://universellutforming.no/b/i-2013-var-det-lenge-til-2021" target="_blank">Universell utforming 2013</a></li>
+					<li><a href="https://snl.no/universell_utforming" target="_blank">Universell utforming SNL</a></li>
+				</ul>
+			</section>
+		</main>
+		<footer>
+			Liv Ingrid Andersen || livia@hiof.no
+		</footer>
+	</div>
+	</body>
+</html>

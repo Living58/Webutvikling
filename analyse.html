@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=devise-width, initial-scale=1.0">
+		<title>Webutvikling</title>
+		<link rel="icon" type="image/x-icon" href="res/logo2.png">
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		<link href="icons/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/gridstyle.css">
+		
+		<script src="js/myscript.js"></script>
+
+	</head>
+	<body>
+	<div id="grid-container">
+		<header id="page-header">
+			<h1>Webutvikling</h1>
+		
+		</header>
+		<nav>
+			<a href="index.html"><img id="logo-nav" src="res/logo2.png" alt="Et bilde av en logo for nettsiden."></a>
+			<i class="fa-solid fa-bars-staggered" onclick="mobilMenu()"> </i>
+			<ul id="ham" class="top-menu">
+				<li><a href="index.html">Hjem</a></li>
+				<li><a href="kontakt.html">Kontakt oss</a></li>
+				<li><a href="analyse.html">Analyse</a></li>
+				<li><a href="CMS.html">CMS</a></li>
+				<li><a href="uuseo.html">UU vs SEO</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section>
+				<article>
+					<header>
+						<h2>Analyse</h2>
+					</header>
+					<p>
+						For å analysere nettstedet så har jeg brukt både Lighthouse for å analysere hvor bra SEO nettstedet har, i tillegg til at jeg har brukt Wave som er produsert av Webaim for å analysere hvor bra nettstedet er for universell utforming. Den heuristiske evalueringen har jeg gjort selv ved å ta i bruk de 10 heuristiske reglene for brukervennlighet av Jakob Nielsen. Jeg har analysert alle sidene på nettstedet hver for seg, men resultatet ble det samme på de alle.
+					</p>
+					<h3>Lighthouse analysen</h3>
+					<p>
+						Analysen jeg gjorde for å sjekke kvaliteten for SEO på nettstedet ga meg disse resultatene:
+					</p>
+					<img class="img-analyse" src="res/lighthouse.png" alt="Illustrasjon av resultatene etter at nettsiden gjennomgikk Lighthouse analyse">
+					<p>
+						Når jeg går gjennom disse resultatene så ser alt veldig bra ut, det er noe som kan forbedres, blant annet tilgjengelighet og SEO.
+					</p>
+					<img class="img-analyse" src="res/lh-accessibility.png" alt="Illustrasjon av error på tilgjengelighet">
+					<p>
+						For å forbedre tilgjengeligheten så har jeg fått en tilbakemeldingen. Tilbakemeldingen sier i fra at jeg har brukt h-tagene litt merkelig, altså så har jeg brukt en h1-tag, for så å gå rett videre på en h3-tag. For å fikse opp i dette så gjorde jeg rekkefølgen på h-tagene mine riktige, altså at jeg går fra h1 til h2 til h3 osv, i stedet for å hoppe fra h1 til h3. 
+					</p>
+					<img class="img-analyse" src="res/lh-seo.png" alt="Illustrasjon av error på SEO">
+					<p>
+						Jeg fikk også en tilbakemelding på at jeg hadde for dårlig SEO på nettstedet. For å fikse opp i dette så la jeg inn metadata på nettsiden siden dette var noe jeg ikke hadde fra før av. 
+					</p>
+					<img class="img-analyse" src="res/meta.png" alt="Illustrasjon av hvordan jeg har rettet opp mangelen på metadata">
+					<h3>Wave analysen</h3>
+					<p>
+						Analysen jeg gjorde på Wave for universell utforming av nettstedet ga disse resultatene:
+					</p>
+					<div id="analyse-flex">
+						<img id="flex-analyse" src="res/wave.png" alt="Resultat av analysen som ble gjort gjennom webaims Wave">
+						<section id="flex-article">
+							<p>
+								Når vi ser på disse resultatene så har nettstedet kun fått tre advarsler, men ingen error. 
+							</p>
+							<p>
+								Den første advarselen går ut på det samme som vi fikk tilbakemelding på når vi analyserte SEO, at h-tagene ikke er i riktig rekkefølge. 
+							</p>
+							<p>
+								Den andre advarselen er at det er link i nav-baren som linker til den samme siden man er inne på. Den referer til “hjem”-knappen i navbaren og logoen som begge linker til hjemmesiden.
+							</p>
+							<p>
+								Den tredje og siste advarselen jeg fikk var at nettstedet var avhengig av datamus. Jeg har selv forsøkt å navigere meg rundt de forskjellige sidene med hjelp av tab-knappen, og det oppstod ingen problemer.
+							</p>
+						</section>
+					</div>
+					<h3>Heuristisk evaluering</h3>
+					<p>
+						På den heuristiske evalueringen så valgte jeg meg ut de reglene av de 10 hovedreglene som jeg selv syntes var mest relevante for nettstedet. Det at jeg selv måtte gjøre denne evalueringen synes jeg selv at var litt vanskelig da jeg er lært opp til at man skal være helt nøytral når man gjør en slik evaluering. Det er vanskelig å være 100% nøytral når man jobber med sitt eget nettsted og eget design.
+					</p>
+					<p>
+						De tre heuristikkene jeg har valgt ut er “user control and freedom”, “consistency and standards” og “error prevention”. Grunnen til at jeg valgte disse var fordi jeg selv følte at disse var mest relevant til nettstedet vi nå arbeider med.
+					</p>
+					<p>
+						“User control and freedom” går ut på å gi brukerne av nettstedet alltid en rask utvei hvis de setter seg fast. For eksempel lenker til forsiden og brødsmulestier. På dette nettstedet så har jeg flere lenker tilbake til forsiden, men det finnes ingen brødsmulesti. Dette er fordi jeg selv ikke synes at siden er såpass stor at det går an å rote seg bort, samt hvis man roter seg bort så finnes det flere lenker til andre sider i navbaren.
+					</p>
+					<p>
+						“Consistency and standards” går ut på at nettstedet ikke burde skille seg så mye ut fra andre lignende nettsteder. For eksempel så burde oppsettet være nokså likt, og ordbruken burde være relevant. Det som er likt med dette nettstedet sammenlignet med andre lignende nettsteder er bruken av hamburger-meny når man bruker nettstedet på en mindre skjerm, og plassering av innhold og navigering. Noe som kan skille seg ut er at tittelen til nettstedet ikke lenker til forsiden, men logoen og “hjem”-knappen i navbaren gjør dette.
+					</p>
+					<p>
+						“Error prevention” går ut på at du skal forhindre at brukere opplever error når de bruker nettstedet ditt. Dette kan man fikse ved å analysere koden din, og trykke deg gjennom alle lenker som finnes på nettstedet.
+					</p>
+				</article>
+			</section>
+			<section id="section-table">
+				<div id="analyse-table">
+					<p class="bold-table">Resultat</p>
+					<p class="bold-table">Tiltak</p>
+					<p>heading level er ikke i stigende rekkefølge</p>
+					<p>Endre h-tager slik at det går fra h1 til h2 til h3 osv.</p>
+					<p>Manglende meta-tager</p>
+					<p>La inn korrekte og detaljerte meta-tager</p>
+					<p>Overflødige lenker i navbar</p>
+					<p>Har ikke endret på forsiden fordi jeg ønsker at navbaren skal være lik på alle sider</p>
+				</div>
+			</section>
+			<section>
+				<article>
+					<h2>tilgjengelighetserklæring</h2>
+					<p>Her finner du en link til en tilgjengelighetserklæring som er fylt ut etter hvilke krav dette nettstedet fyller. Tilgjengelighetserklæringen er utformet av UU-tilsynet og er gjeldene fra og med januar 2023.</p>
+					<a class="link" href="uu-pdf.htm" target="_bank">tilgjengelighetserklæring</a>
+				</article>
+			</section>
+			<section class="section-source">
+				<h2>Kilder:</h2>
+				<ul class="sources">
+					<li><a href="https://wave.webaim.org/" target="_blank">Webaim Wave</a></li>
+					<li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank">Heuristisk evaluering</a></li>
+					<li><a href="https://www.uutilsynet.no/wcag-standarden/oppbygging-av-wcag-20/139#retningslinje_24_navigerbar" target="_blank">UU-tilsynet</a></li>
+				</ul>
+			</section>
+		</main>
+		<footer>
+			Liv Ingrid Andersen || livia@hiof.no
+		</footer>
+	</div>
+	</body>
+</html>

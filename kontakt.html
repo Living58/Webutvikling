@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=devise-width, initial-scale=1.0">
+		<title>Webutvikling</title>
+		<link rel="icon" type="image/x-icon" href="res/logo2.png">
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		<link href="icons/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/gridstyle.css">
+		
+		<script src="js/myscript.js"></script>
+
+	</head>
+	<body>
+	<div id="grid-container">
+		<header id="page-header">
+			<h1>Webutvikling</h1>
+		
+		</header>
+		<nav>
+			<a href="index.html"><img id="logo-nav" src="res/logo2.png" alt="Et bilde av en logo for nettsiden."></a>
+			<i class="fa-solid fa-bars-staggered" onclick="mobilMenu()"> </i>
+			<ul id="ham" class="top-menu">
+				<li><a href="index.html">Hjem</a></li>
+				<li><a href="kontakt.html">Kontakt oss</a></li>
+				<li><a href="analyse.html">Analyse</a></li>
+				<li><a href="CMS.html">CMS</a></li>
+				<li><a href="uuseo.html">UU vs SEO</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section>
+				<article>
+					<header>
+						<h2>Kontakt oss</h2>
+					</header>
+					<ul class="contact">
+						<li><i class="fa-solid fa-envelope"></i>Epost: postmottak@hiof.no</li>
+						<li><i class="fa-solid fa-phone"></i>Telefon: 69 60 80 00</li>
+						<li><i class="fa-solid fa-location-dot"></i>Adresse: BRA veien 4, 1783 Halden</li>
+					</ul>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1884406378012!2d11.35061461606424!3d59.12924748158928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1667749016384!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</article>
+			</section>
+			<section>
+				<article id="form">
+					<h2>Kontaktskjema:</h2>
+					<form method="post">
+						<label for="name">Navn: </label>
+						<input type="text" name="name" id="name">
+						<label for="age">Alder: </label>
+						<input type="number" name="age" id="age">
+						<label for="description">Beskrivelse: </label>
+						<textarea name="description" id="description"></textarea>
+						<button type="submit">Registrer</button>
+					</form>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<p>Liv Ingrid Andersen || livia@hiof.no</p>
+			<ul id="share">
+				<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fparse.com" target="_blank" alt="Link til å dele artikkel på Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/intent/tweet" target="_blank" alt="Link til å dele artikkel på Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+				<li><a  href="http://pinterest.com/pin/create/link/?url=URL&media=COVERIMAGE&description=ADDRESS" target="_blank" alt="Link til å dele artikkel på Pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
+			</ul>
+		</footer>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=devise-width, initial-scale=1.0">
+		<title>Webutvikling</title>
+		<link rel="icon" type="image/x-icon" href="res/logo2.png">
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		<link href="icons/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/gridstyle.css">
+		
+		<script src="js/myscript.js"></script>
+
+	</head>
+	<body>
+	<div id="grid-container">
+		<header id="page-header">
+			<h1>Webutvikling</h1>
+		
+		</header>
+		<nav>
+			<a href="index.html"><img id="logo-nav" src="res/logo2.png" alt="Et bilde av en logo for nettsiden."></a>
+			<i class="fa-solid fa-bars-staggered" onclick="mobilMenu()"> </i>
+			<ul id="ham" class="top-menu">
+				<li><a href="index.html">Hjem</a></li>
+				<li><a href="kontakt.html">Kontakt oss</a></li>
+				<li><a href="analyse.html">Analyse</a></li>
+				<li><a href="CMS.html">CMS</a></li>
+				<li><a href="uuseo.html">UU vs SEO</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section>
+				<article>
+					<header>
+						<h2>CMS</h2>
+					</header>
+					<img class="css-image" src="res/cms.png" alt="En illustrasjon av et mulig CMS ikon som er veldig hjemmelaget.">
+					<p>
+						CMS (content management system), på godt norsk, innholdsstyrings-system er kort fortalt et system som lar deg bygge opp ditt eget nettsted på en enklere måte. Det finnes to forskjellige hovedgrupper i CMS, og det er et headless CMS og et seamless CMS.
+					</p>
+					<h3>Seamless vs headless</h3>
+					<p>
+						Et seamless CMS er et CMS hvor frontend-utvikling og backend-utvikling går hånd i hånd. For eksempel så kan man lage innhold direkte på plattformen, for så å publisere det. Innholdet man lager vil alltid være synlig eller tilgjengelig for publisering. Den meste jobben i et seamless CMS gjøres enten på en plattform eller programvare, og det vil være minimalt med koding som skal gjøres. Et seamless CMS er nok den enkleste måten å sette opp et nettsted på hvis man ikke har så mye erfaring innenfor programmering.
+					</p>
+					<p>
+						Et headless CMS er et CMS hvor vi har separert back-end og front-end. Altså er hvor innholdet er lagret separat fra hvor innholdet blir presentert. All dataen til et nettsted er lagret i et headless CMS, så kan man videre hente denne dataen via et API når man jobber med utseendet til nettstedet. Man kan se på det som en kropp og et hode, hvor dataen som blir lagret er fast i kroppen, mens hode hvor innholdet vises til forbrukeren kan byttes ut ettersom hvilke format forbrukeren bruker nettstedet på. Headless CMS er mer komplisert å jobbe med hvis man ikke har kompetansen som trengs, men det betyr ikke at det nødvendigvis er vanskeligere, for man kan alltid lære av internett.
+					</p>
+					<p>
+						Et seamless CMS er enklere å jobbe med når det er mindre koding involvert, men det er mulighet for mer frihet når det kommer til design i et headless CMS. I seamless CMS så får man som regel noen templates å velge mellom, altså du kan velge en stil til nettstedet ditt gjennom CMS, men med et headless CMS så kan du designe alt selv fra bunn av. Dette kan komme godt med hvis du vil lage et unikt nettsted som representerer din bedrift og deg, i stedet for å velge en ferdig-laget template.
+					</p>
+					<h3>CMS-løsninger</h3>
+					<p>
+						Det finnes flere forskjellige CMS-løsninger. Noen eksempler på dem er WCMS, CCMS og ECM. WCMS står for Web content management system, og er et CMS som er mer fokusert på nettsider og nettbutikker. CCMS står for Component content management system, som i navnet så inneholder dette systemet komponenter, og arbeid med komponenter. CCMS fungerer også bra for nettsider, men hvis du har for mye tung innhold så kan implementasjons tiden forlenge seg. ECM står for Enterprise content management, systemet gjør det enklere for bedrifter å dele dokumenter som word-filer, pdf-filer osv. internt.
+					</p>
+					<p>
+						Eksempler på WCMS programvare er for eksempel Wordpress og Joomla, som begge også er seamless CMS. Eksempler på CCMS programvare Sanity og Storyblok, som begge er headless CMS. Eksempler på ECM programvare er Canvas, som brukes for å dele dokumenter og presentasjoner, samt videoforelesninger. 
+					</p>
+				</article>
+			</section>
+			<section id="section-table">
+				<div class="table-container">
+					<span id="empty">Denne er tom</span>
+					<p class="bold-table">Fordeler</p>
+					<p class="bold-table">Ulemper</p>
+					<p class="bold-table">Likheter</p>
+					<p class="bold-table">Forskjeller</p>
+					<p class="bold-table">WCMS</p>
+					<p>Flere kan involveres i utvikling av nettsted</p>
+					<p>Sårbar for hackere</p>
+					<p>Innholdsstyring</p>
+					<p>Trenger ikke å være erfaren utvikler</p>
+					<p class="bold-table">CCMS</p>
+					<p>Muligheten til å bruke resirkulerbart innhold</p>
+					<p>Kan forlenge implementasjons tiden</p>
+					<p>Innholdsstyring</p>
+					<p>Arbeid med komponenter</p>
+					<p class="bold-table">ECM</p>
+					<p>Enkelt dele dokumenter internt</p>
+					<p>Kun for autoriserte brukere</p>
+					<p>Innholdsstyring</p>
+					<p>Mer fokusert på dokumenter</p>
+				</div>
+				<p>En tabell for å sammenligne noen av de ulike CMS-typene som finner. WCMS står for Web content management system. CCMS står for Component content management system. ECM står for Enterprise content management system.</p>
+			</section>
+			<section class="section-source">
+				<h2>Kilder:</h2>
+				<ul class="sources">
+					<li><a href="https://www.optimizely.com/no/insights/blog/hva-er-et-cms/" target="_blank">Hva er et CMS?</a></li>
+					<li><a href="https://www.sanity.io/headless-cms" target="_blank">Headless CMS</a></li>
+					<li><a href="https://www.contentful.com/r/knowledgebase/what-is-headless-cms" target="_blank">Headless CMS explained in 1 minute</a></li>
+				</ul>
+			</section>
+		</main>
+		<footer>
+			Liv Ingrid Andersen || livia@hiof.no
+		</footer>
+	</div>
+	</body>
+</html>
